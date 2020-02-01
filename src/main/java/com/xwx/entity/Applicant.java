@@ -9,7 +9,7 @@ public class Applicant implements Serializable {
 	
 	
 	
-	    /**
+	    /** 
 	    * @Fields serialVersionUID : 生成序列化id
 	    */
 	private static final long serialVersionUID = -6111181578804933476L;

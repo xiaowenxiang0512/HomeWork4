@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.xwx.entity.Applicant;
+import com.xwx.entity.Applicant; 
 import com.xwx.service.AppService;
 
 @Controller

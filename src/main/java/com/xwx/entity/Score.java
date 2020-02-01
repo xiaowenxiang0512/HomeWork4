@@ -11,7 +11,7 @@ public class Score {
 		this.aid = aid;
 	}
 	public Integer getJid() {
-		return jid;
+		return jid; 
 	}
 	public void setJid(Integer jid) {
 		this.jid = jid;

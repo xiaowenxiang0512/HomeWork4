@@ -16,7 +16,7 @@ public interface AppService {
 
 	void pjf(Applicant a);
 
-	void yjs(Applicant a);
+	void yjs(Applicant a); 
 	
 
 }

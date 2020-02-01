@@ -12,7 +12,7 @@ public class Job implements Serializable {
 	private static final long serialVersionUID = -5753925105002413216L;
 	/**  **/
 	private Integer id;
-	/**  **/
+	/**  **/ 
 	private String name;
 	/** 最低学历要求 **/
 	private Integer require_edu;

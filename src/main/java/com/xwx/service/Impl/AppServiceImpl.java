@@ -45,7 +45,7 @@ public class AppServiceImpl implements AppService {
 	}
 	
 	@Override
-	public void yjs(Applicant a) {
+	public void yjs(Applicant a) { 
 		mapper.getYjs(a);
 	}
 }

@@ -13,7 +13,7 @@ public interface AppMapper {
 	void tj(Applicant a);
 
 	List<Applicant> zc();
-
+ 
 	void getPjf(Applicant a);
 
 	void getYjs(Applicant a);
