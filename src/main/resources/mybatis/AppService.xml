@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xwx.mapper.AppMapper">
+
+	<select id="getList" resultType="com.xwx.entity.Applicant">
+		select a.id,a.name,a.gender,a.birthday,a.college,a.major,a.edu,a.degree,GROUP_CONCAT(b.score)cj,AVG(b.score)pjf from cctv_applicant a LEFT JOIN cctv_score b on a.id=b.aid LEFT JOIN cctv_job c on b.jid=c.id GROUP BY a.id	
+	</select>
+	
+	<insert id="tj">
+		INSERT INTO `cctv_applicant` (`name`, `gender`, `birthday`, `college`, `major`, `edu`, `degree`, `created`) VALUES ('2', '2', '2010-10-10', '2', '2', '2', '2', '2020-01-30 20:21:48')	
+	</insert>
+	
+	<delete id="del">
+		delete from cctv_applicant where id = #{id}
+	</delete>
+	
+	<select id="zc" resultType="com.xwx.entity.Applicant">
+		select * from cctv_applicant a LEFT JOIN cctv_score b on a.id=b.aid where b.jid=1 and b.score>90
+	</select>
+	
+	<select id="getPjf" resultType="com.xwx.entity.Applicant">
+		select a.name,AVG(b.score) AS pjf from cctv_applicant a LEFT JOIN cctv_score b on a.id=b.aid 
+	</select>
+	
+	<select id="getYjs" resultType="com.xwx.entity.Applicant">
+		select name from cctv_applicant where edu=3
+	</select>
+	
+</mapper>
